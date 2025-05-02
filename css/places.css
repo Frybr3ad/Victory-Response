@@ -1,18 +1,19 @@
-body{
+body {
     margin: 0;
     padding: 0;
     height: 100vh;
     width: 100vw;
-    background-image: url('/img/plane3.webp');
+    background-image: url('/img/blurred.jpg');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+
 h1 {
     font-size: xx-large;
-    background-color: antiquewhite;
-    color: pink;
+    background-color: rgba(72, 182, 45, 0);
+    color: rgb(66, 47, 175);
     text-align: center;
 }
 
@@ -23,15 +24,45 @@ nav {
 }
 
 nav a {
-    color: red;
+    color: rgb(32, 20, 101);
     text-decoration: none;
     padding: 10px;
     margin: 0 80px; /* Adds space between the links */
     display: inline-flex;
     justify-content: space-between;
-  }
+}
 
-  nav a:hover {
+nav a:hover {
     background-color: blue; /* Hover effect for links */
     border-radius: 25px;
-  }
+}
+
+/* Ensure the cards don't stretch too far */
+.card {
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+    margin-bottom: 20px;
+    /* Ensures the cards stay within a reasonable width */
+    width: 100%;
+}
+
+/* Hover effect for the card */
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/* Adjust card images */
+.card-img-top {
+    height: 300px;
+    object-fit: cover;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+}
+
+footer i {
+    margin: 0 15px;
+    font-size: 24px;
+}
