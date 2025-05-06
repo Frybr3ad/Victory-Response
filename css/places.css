@@ -3,66 +3,47 @@ body {
     padding: 0;
     height: 100vh;
     width: 100vw;
-    background-image: url('/img/blurred.jpg');
+    background-image: url('/img/idaho/cardbackground2.jpeg');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
-
-h1 {
-    font-size: xx-large;
-    background-color: rgba(72, 182, 45, 0);
-    color: rgb(66, 47, 175);
+  h1,
+  h3 {
+    font-style: italic;
     text-align: center;
-}
-
-nav {
-    text-align: center;
-    padding: 30px;
-    margin: 0 20px;
-}
-
-nav a {
-    color: rgb(32, 20, 101);
-    text-decoration: none;
-    padding: 10px;
-    margin: 0 80px; /* Adds space between the links */
-    display: inline-flex;
-    justify-content: space-between;
-}
-
-nav a:hover {
-    background-color: blue; /* Hover effect for links */
-    border-radius: 25px;
-}
-
-/* Ensure the cards don't stretch too far */
+    color: rgba(18, 61, 111, 0.896);
+  }
+  /* Ensure the cards don't stretch too far */
 .card {
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s ease;
-    margin-bottom: 20px;
-    /* Ensures the cards stay within a reasonable width */
-    width: 100%;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+  margin-bottom: 20px;
+  /* Ensures the cards stay within a reasonable width */
+  width: 100%;
 }
 
 /* Hover effect for the card */
 .card:hover {
-    transform: translateY(-10px);
+  transform: translateY(-10px);
 }
 
 /* Adjust card images */
 .card-img-top {
-    height: 300px;
-    object-fit: cover;
+  height: 300px;
+  object-fit: cover;
 }
-
-footer {
-    text-align: center;
-    padding: 20px;
+section{
+  align-items:center;
+  justify-items: end;
+  border: thick white;
 }
-
-footer i {
-    margin: 0 15px;
-    font-size: 24px;
-}
+footer a:hover {
+    /* color: #555;
+    transform: scale(1.1);
+    transition: 0.2s; */
+  }
+  p {
+    color: rgb(23, 120, 239);
+  }

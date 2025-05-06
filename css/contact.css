@@ -1,38 +1,75 @@
 body {
   margin: 0;
   padding: 0;
-  height: 100vh;
-  width: 100vw;
-  background-image: url('/img/blurred.jpg');
+  min-height: 100vh;
+  background-image: url('/img/idaho/cardbackground2.jpeg');
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
 
-h1 {
-  font-size: xx-large;
-  background-color: rgba(72, 182, 45, 0);
-  color: rgb(66, 47, 175);
-  text-align: center;
+a:hover {
+  color: rgb(46, 241, 88);
 }
 
-nav {
-  text-align: center;
-  padding: 30px;
-  margin: 0 20px;
+a:active {
+  color: rgb(109, 241, 191);
 }
 
-nav a {
-  color:  rgb(32, 20, 101);
-  text-decoration: none;
-  padding: 10px;
-  margin: 0 80px; /* Adds space between the links */
-  display: inline-flex;
-  justify-content: space-between;
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #f3ecec;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
 }
 
-nav a:hover {
-  background-color: blue; /* Hover effect for links */
-  border-radius: 25px;
+input[type="submit"] {
+  background-color: rgb(192, 213, 247);
+  color: black;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #5341dd;
+}
+
+.row.equal-height {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+}
+
+section,
+aside {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: thick whitesmoke;
+}
+
+.carousel-inner img {
+  object-fit: cover;
+}
+
+p {
+  color: wheat;
 }
